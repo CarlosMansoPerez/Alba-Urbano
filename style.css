@@ -46,6 +46,9 @@ body{
 .text-primary{
   color: #93296c;
 }
+.bg-nav{
+  background: linear-gradient(to left, #93296c 20%, white 75%);
+}
 @font-face {
   font-family: autolux;
   src: url(./fonts/Midlandluxury\ Regular.otf);
@@ -56,6 +59,12 @@ body{
 }
 .font-autolux{
   font-family: autolux;
+}
+.bg-image-flamenco{
+  background-image: url('./img/manos_flamenco.webp');
+  background-size: cover;
+  background-position: 225px 25%;
+  background-repeat: no-repeat;
 }
 .font-autolux-bold{
   font-family: autolux-bold;
@@ -129,6 +138,15 @@ body{
   }
   .text-xxxs{
       font-size: 0.6rem !important;
+  }
+  .bg-nav{
+    background: linear-gradient(to left, #93296c, white 55%);
+  }
+  .bg-image-flamenco{
+    background-image: url('./img/manos_flamenco.webp');
+    background-size: cover;
+    background-position: 55%;
+    background-repeat: no-repeat;
   }
 }
 
