@@ -1,17 +1,29 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    const totalSpan = document.getElementById("total");
+  // ABRIR HORARIO
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("img01");
+  var span = document.getElementsByClassName("close")[0];
+  var clickSpan = document.getElementById("clickSpan");
+  var body = document.getElementById("body");
   
-    checkboxes.forEach(function(checkbox) {
-      checkbox.addEventListener("change", function() {
-        let totalPrice = 0;
-        checkboxes.forEach(function(checkbox) {
-          if (checkbox.checked) {
-            totalPrice += parseInt(checkbox.getAttribute("data-price"));
-          }
-        });
-        totalSpan.textContent = totalPrice;
-      });
-    });
-  });
+  clickSpan.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = "./img/horario.webp";
+    body.style.overflowY = "hidden";
+  }
+  
+  span.onclick = function() {
+    modal.style.display = "none";
+    body.style.overflowY = "visible";
+
+  }
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      body.style.overflowY = "visible";
+
+    }
+  }
+  
+
   
