@@ -24,6 +24,13 @@
 
     }
   }
+
+  var okey = document.getElementById("okey");
+  var marca_de_agua = document.getElementById("marca_de_agua");
+
+  okey.onclick = function() {
+    marca_de_agua.style.display = "none";
+  }
   
 
   
